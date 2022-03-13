@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5040491042223930C935F881 /* Pods_ScrollTabBarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE0FABA0DF72C13B4B65FD7 /* Pods_ScrollTabBarTests.framework */; };
+		99BF1302C10C4877DFFC53FC /* Pods_ScrollTabBar_ScrollTabBarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88134E00A3576061179C0976 /* Pods_ScrollTabBar_ScrollTabBarUITests.framework */; };
 		FF1F65DB27DDD5CB008A6A73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F65DA27DDD5CB008A6A73 /* AppDelegate.swift */; };
 		FF1F65DD27DDD5CB008A6A73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F65DC27DDD5CB008A6A73 /* SceneDelegate.swift */; };
 		FF1F65DF27DDD5CB008A6A73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F65DE27DDD5CB008A6A73 /* ViewController.swift */; };
@@ -16,6 +18,11 @@
 		FF1F65F227DDD5D3008A6A73 /* ScrollTabBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F65F127DDD5D3008A6A73 /* ScrollTabBarTests.swift */; };
 		FF1F65FC27DDD5D3008A6A73 /* ScrollTabBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F65FB27DDD5D3008A6A73 /* ScrollTabBarUITests.swift */; };
 		FF1F65FE27DDD5D3008A6A73 /* ScrollTabBarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F65FD27DDD5D3008A6A73 /* ScrollTabBarUITestsLaunchTests.swift */; };
+		FF1F660B27DDDA84008A6A73 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F660A27DDDA84008A6A73 /* SecondViewController.swift */; };
+		FF1F662427DDDEF8008A6A73 /* Pods_ScrollTabBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8337A3EFACE546E6331B2F /* Pods_ScrollTabBar.framework */; };
+		FF1F662527DDDEF8008A6A73 /* Pods_ScrollTabBar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA8337A3EFACE546E6331B2F /* Pods_ScrollTabBar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FF29C62B27DE087200F378F8 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF29C62A27DE087200F378F8 /* ThirdViewController.swift */; };
+		FF29C62D27DE0A7700F378F8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF29C62C27DE0A7700F378F8 /* FirstViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +42,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FF1F662627DDDEF8008A6A73 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FF1F662527DDDEF8008A6A73 /* Pods_ScrollTabBar.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0C4BB9DB2600047652B1DF9B /* Pods-ScrollTabBar-ScrollTabBarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollTabBar-ScrollTabBarUITests.release.xcconfig"; path = "Target Support Files/Pods-ScrollTabBar-ScrollTabBarUITests/Pods-ScrollTabBar-ScrollTabBarUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2F70AECB8D1008F2394901CB /* Pods-ScrollTabBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollTabBar.debug.xcconfig"; path = "Target Support Files/Pods-ScrollTabBar/Pods-ScrollTabBar.debug.xcconfig"; sourceTree = "<group>"; };
+		3C9F3E924F87CB8BF893A1BB /* Pods-ScrollTabBarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollTabBarTests.debug.xcconfig"; path = "Target Support Files/Pods-ScrollTabBarTests/Pods-ScrollTabBarTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F59337BE5C30C1E4968760D /* Pods-ScrollTabBarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollTabBarTests.release.xcconfig"; path = "Target Support Files/Pods-ScrollTabBarTests/Pods-ScrollTabBarTests.release.xcconfig"; sourceTree = "<group>"; };
+		7BE0FABA0DF72C13B4B65FD7 /* Pods_ScrollTabBarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollTabBarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88134E00A3576061179C0976 /* Pods_ScrollTabBar_ScrollTabBarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollTabBar_ScrollTabBarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA9D935A1F6011430BD3C18B /* Pods-ScrollTabBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollTabBar.release.xcconfig"; path = "Target Support Files/Pods-ScrollTabBar/Pods-ScrollTabBar.release.xcconfig"; sourceTree = "<group>"; };
+		DEDAAB0BDA1A28548A44DD1F /* Pods-ScrollTabBar-ScrollTabBarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollTabBar-ScrollTabBarUITests.debug.xcconfig"; path = "Target Support Files/Pods-ScrollTabBar-ScrollTabBarUITests/Pods-ScrollTabBar-ScrollTabBarUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA8337A3EFACE546E6331B2F /* Pods_ScrollTabBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollTabBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF1F65D727DDD5CB008A6A73 /* ScrollTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF1F65DA27DDD5CB008A6A73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF1F65DC27DDD5CB008A6A73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +79,9 @@
 		FF1F65F727DDD5D3008A6A73 /* ScrollTabBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollTabBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF1F65FB27DDD5D3008A6A73 /* ScrollTabBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollTabBarUITests.swift; sourceTree = "<group>"; };
 		FF1F65FD27DDD5D3008A6A73 /* ScrollTabBarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollTabBarUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FF1F660A27DDDA84008A6A73 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		FF29C62A27DE087200F378F8 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		FF29C62C27DE0A7700F378F8 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1F662427DDDEF8008A6A73 /* Pods_ScrollTabBar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5040491042223930C935F881 /* Pods_ScrollTabBarTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +105,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99BF1302C10C4877DFFC53FC /* Pods_ScrollTabBar_ScrollTabBarUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E3C107E74F116047182BF0D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F70AECB8D1008F2394901CB /* Pods-ScrollTabBar.debug.xcconfig */,
+				AA9D935A1F6011430BD3C18B /* Pods-ScrollTabBar.release.xcconfig */,
+				DEDAAB0BDA1A28548A44DD1F /* Pods-ScrollTabBar-ScrollTabBarUITests.debug.xcconfig */,
+				0C4BB9DB2600047652B1DF9B /* Pods-ScrollTabBar-ScrollTabBarUITests.release.xcconfig */,
+				3C9F3E924F87CB8BF893A1BB /* Pods-ScrollTabBarTests.debug.xcconfig */,
+				3F59337BE5C30C1E4968760D /* Pods-ScrollTabBarTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AC49BC7C5D0BE690FB5582C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA8337A3EFACE546E6331B2F /* Pods_ScrollTabBar.framework */,
+				88134E00A3576061179C0976 /* Pods_ScrollTabBar_ScrollTabBarUITests.framework */,
+				7BE0FABA0DF72C13B4B65FD7 /* Pods_ScrollTabBarTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FF1F65CE27DDD5CB008A6A73 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +142,8 @@
 				FF1F65F027DDD5D3008A6A73 /* ScrollTabBarTests */,
 				FF1F65FA27DDD5D3008A6A73 /* ScrollTabBarUITests */,
 				FF1F65D827DDD5CB008A6A73 /* Products */,
+				6E3C107E74F116047182BF0D /* Pods */,
+				AC49BC7C5D0BE690FB5582C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +167,9 @@
 				FF1F65E327DDD5D3008A6A73 /* Assets.xcassets */,
 				FF1F65E527DDD5D3008A6A73 /* LaunchScreen.storyboard */,
 				FF1F65E827DDD5D3008A6A73 /* Info.plist */,
+				FF1F660A27DDDA84008A6A73 /* SecondViewController.swift */,
+				FF29C62A27DE087200F378F8 /* ThirdViewController.swift */,
+				FF29C62C27DE0A7700F378F8 /* FirstViewController.swift */,
 			);
 			path = ScrollTabBar;
 			sourceTree = "<group>";
@@ -134,9 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF1F660127DDD5D3008A6A73 /* Build configuration list for PBXNativeTarget "ScrollTabBar" */;
 			buildPhases = (
+				0E1C2E3D216E57E207F0F20B /* [CP] Check Pods Manifest.lock */,
 				FF1F65D327DDD5CB008A6A73 /* Sources */,
 				FF1F65D427DDD5CB008A6A73 /* Frameworks */,
 				FF1F65D527DDD5CB008A6A73 /* Resources */,
+				FF1F662627DDDEF8008A6A73 /* Embed Frameworks */,
+				CBB2D73C585729A048D3EA44 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +218,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF1F660427DDD5D3008A6A73 /* Build configuration list for PBXNativeTarget "ScrollTabBarTests" */;
 			buildPhases = (
+				B9B9AA5CF39D713D5EACDC0E /* [CP] Check Pods Manifest.lock */,
 				FF1F65E927DDD5D3008A6A73 /* Sources */,
 				FF1F65EA27DDD5D3008A6A73 /* Frameworks */,
 				FF1F65EB27DDD5D3008A6A73 /* Resources */,
@@ -169,9 +237,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF1F660727DDD5D3008A6A73 /* Build configuration list for PBXNativeTarget "ScrollTabBarUITests" */;
 			buildPhases = (
+				6734CDB1371765FCFE4B9BCA /* [CP] Check Pods Manifest.lock */,
 				FF1F65F327DDD5D3008A6A73 /* Sources */,
 				FF1F65F427DDD5D3008A6A73 /* Frameworks */,
 				FF1F65F527DDD5D3008A6A73 /* Resources */,
+				7E2924401C98C33DD02C0C54 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,12 +323,118 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E1C2E3D216E57E207F0F20B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScrollTabBar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6734CDB1371765FCFE4B9BCA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScrollTabBar-ScrollTabBarUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E2924401C98C33DD02C0C54 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScrollTabBar-ScrollTabBarUITests/Pods-ScrollTabBar-ScrollTabBarUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScrollTabBar-ScrollTabBarUITests/Pods-ScrollTabBar-ScrollTabBarUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScrollTabBar-ScrollTabBarUITests/Pods-ScrollTabBar-ScrollTabBarUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9B9AA5CF39D713D5EACDC0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScrollTabBarTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBB2D73C585729A048D3EA44 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScrollTabBar/Pods-ScrollTabBar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScrollTabBar/Pods-ScrollTabBar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScrollTabBar/Pods-ScrollTabBar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FF1F65D327DDD5CB008A6A73 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1F660B27DDDA84008A6A73 /* SecondViewController.swift in Sources */,
 				FF1F65DF27DDD5CB008A6A73 /* ViewController.swift in Sources */,
+				FF29C62B27DE087200F378F8 /* ThirdViewController.swift in Sources */,
+				FF29C62D27DE0A7700F378F8 /* FirstViewController.swift in Sources */,
 				FF1F65DB27DDD5CB008A6A73 /* AppDelegate.swift in Sources */,
 				FF1F65DD27DDD5CB008A6A73 /* SceneDelegate.swift in Sources */,
 			);
@@ -434,6 +610,7 @@
 		};
 		FF1F660227DDD5D3008A6A73 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F70AECB8D1008F2394901CB /* Pods-ScrollTabBar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -447,6 +624,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,6 +640,7 @@
 		};
 		FF1F660327DDD5D3008A6A73 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA9D935A1F6011430BD3C18B /* Pods-ScrollTabBar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -475,6 +654,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -490,6 +670,7 @@
 		};
 		FF1F660527DDD5D3008A6A73 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C9F3E924F87CB8BF893A1BB /* Pods-ScrollTabBarTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +696,7 @@
 		};
 		FF1F660627DDD5D3008A6A73 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F59337BE5C30C1E4968760D /* Pods-ScrollTabBarTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -540,6 +722,7 @@
 		};
 		FF1F660827DDD5D3008A6A73 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEDAAB0BDA1A28548A44DD1F /* Pods-ScrollTabBar-ScrollTabBarUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -563,6 +746,7 @@
 		};
 		FF1F660927DDD5D3008A6A73 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C4BB9DB2600047652B1DF9B /* Pods-ScrollTabBar-ScrollTabBarUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
