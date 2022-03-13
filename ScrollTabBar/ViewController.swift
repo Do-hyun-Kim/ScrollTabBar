@@ -18,6 +18,15 @@ class ViewController: UIViewController {
         return $0
     }(UIView())
     
+    private let secondContainerView: UIView = {
+        return $0
+    }(UIView())
+    
+    
+    private let thirdContainerView: UIView = {
+        return $0
+    }(UIView())
+    
     private let pageView: UIView = {
         $0.backgroundColor = .black
         $0.layer.cornerRadius = 2
@@ -28,7 +37,9 @@ class ViewController: UIViewController {
     private let disposeBag: DisposeBag = DisposeBag()
     
     private var topView: TopNavigationView? = nil
-    
+    private let contentView: UIView = UIView()
+    private let scrollView: UIScrollView = UIScrollView()
+    private let stackView: UIStackView = UIStackView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,19 +51,73 @@ class ViewController: UIViewController {
     private func setUI() {
         topView = TopNavigationView(frame: CGRect(x: 0, y: 44, width: self.view.frame.width, height: 50))
         view.addSubview(topView!)
-        view.addSubview(containerView)
         view.addSubview(pageView)
+        view.addSubview(contentView)
+        contentView.addSubview(scrollView)
+        scrollView.addSubview(stackView)
+        scrollView.bounces = true
+        scrollView.isPagingEnabled = true
+        
         view.backgroundColor = .white
         
+        
         let firstView = FirstViewController()
-        addChild(firstView)
+        let secondView = SecondViewController()
+        let thirdView = ThirdViewController()
+        
+        stackView.axis = .horizontal
+        stackView.distribution = .fillEqually
+        stackView.alignment = .center
+        stackView.spacing = 0
+        
         containerView.addSubview(firstView.view)
+        secondContainerView.addSubview(secondView.view)
+        thirdContainerView.addSubview(thirdView.view)
+        
+        stackView.addSubview(containerView)
+        stackView.addSubview(secondContainerView)
+        stackView.addSubview(thirdContainerView)
+
         didMove(toParent: self)
         
-        containerView.snp.makeConstraints {
+        
+        contentView.snp.makeConstraints {
             $0.top.equalTo(topView!.snp.bottom)
-            $0.left.right.bottom.equalToSuperview()
+            $0.left.bottom.equalToSuperview()
+            $0.right.equalTo(0)
+            $0.width.equalTo(view.frame.width * 3)
         }
+        
+        
+        scrollView.snp.makeConstraints {
+            $0.top.left.right.bottom.equalToSuperview()
+            $0.height.equalToSuperview()
+        }
+        
+        stackView.snp.makeConstraints {
+            $0.top.left.right.bottom.equalToSuperview()
+            $0.width.equalTo(view.frame.width * 3)
+        }
+        
+        
+        containerView.snp.makeConstraints {
+            $0.top.left.bottom.equalToSuperview()
+            $0.right.equalTo(secondContainerView.snp.left)
+        }
+        
+        secondContainerView.snp.makeConstraints {
+            $0.top.bottom.equalTo(0)
+            $0.left.equalTo(containerView.snp.right)
+            $0.width.height.equalTo(containerView)
+        }
+        
+        thirdContainerView.snp.makeConstraints {
+            $0.top.bottom.equalTo(0)
+            $0.left.equalTo(secondContainerView.snp.right)
+            $0.right.equalTo(stackView.snp.right)
+            $0.width.height.equalTo(containerView)
+        }
+        
         
         pageView.snp.makeConstraints {
             $0.top.equalTo(topView!.snp.bottom).offset(-2)
@@ -101,6 +166,7 @@ class ViewController: UIViewController {
             }
             self.view.layoutIfNeeded()
         })
+        self.removeFromParent()
         
     }
     
@@ -120,6 +186,7 @@ class ViewController: UIViewController {
             }
             self.view.layoutIfNeeded()
         })
+        self.removeFromParent()
     }
     
     private func thirdViewDidMove() {
@@ -140,6 +207,7 @@ class ViewController: UIViewController {
             }
             self.view.layoutIfNeeded()
         })
+        self.removeFromParent()
     }
 
 
@@ -227,4 +295,11 @@ class TopNavigationView: UIView {
 
 extension ViewController : UIScrollViewDelegate {
     
+    
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        print("scroll")
+        
+        
+    }
 }
